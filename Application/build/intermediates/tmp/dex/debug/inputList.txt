@@ -1,0 +1,4 @@
+/home/arthur/AndroidStudioProjects/CustomNotifications/Application/build/intermediates/classes/debug
+/home/arthur/AndroidStudioProjects/CustomNotifications/Application/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-035f1a689ab02899e80957ef294efedb68781eb8.jar
+/home/arthur/AndroidStudioProjects/CustomNotifications/Application/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-99310d0bd02daa1acdf9638155a477c5c8ddaee2.jar
+/home/arthur/AndroidStudioProjects/CustomNotifications/Application/build/intermediates/pre-dexed/debug/classes-bc9a581780c8d8c6ad508c3ed44d65ddcdf448e9.jar

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/carbon">
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/calendarView"
+        android:selectedWeekBackgroundColor="#ff37b058"
+        android:weekNumberColor="#ff000000"
+        android:weekSeparatorLineColor="#ffffffff"
+        android:unfocusedMonthDateColor="#ff7d7d7d"
+        android:showWeekNumber="false"
+        android:focusedMonthDateColor="#ff010101"
+        android:background="#ffb7b7b7"
+        android:clickable="true"
+        android:contentDescription="@string/custom_notification" />
+
+</LinearLayout><!-- From: file:/home/arthur/AndroidStudioProjects/CustomNotifications/Application/src/main/res/layout/events.xml -->
