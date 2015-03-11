@@ -50,10 +50,6 @@ import android.widget.ImageView;
          */
 
 
-
-
-
-
         @Override
         public void onBackPressed() {
             // do nothing. We want to force user to stay in this activity and not drop out.
@@ -63,7 +59,6 @@ import android.widget.ImageView;
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             WebView webView = (WebView) findViewById(R.id.webView);
-
 
 
             setContentView(R.layout.main);
@@ -90,7 +85,7 @@ import android.widget.ImageView;
             setContentView(R.layout.events);
         }
 
-        public void doScale(View view){
+        public void doScale(View view) {
             ImageView imageView = (ImageView) findViewById(R.id.imageView);
             imageView.setImageResource(R.drawable.bigman);
 
@@ -101,55 +96,7 @@ import android.widget.ImageView;
             imageView.startAnimation(scaleAnimation);
 
 
-
         }
-        class RequestTask extends AsyncTask<String, String, String>{
 
-            @Override
-// username, password, message, mobile
-            protected String doInBackground(String... url) {
-                // constants
-                int timeoutSocket = 5000;
-                int timeoutConnection = 5000;
-
-                HttpParams httpParameters = new BasicHttpParams();
-                HttpConnectionParams.setConnectionTimeout(httpParameters, timeoutConnection);
-                HttpConnectionParams.setSoTimeout(httpParameters, timeoutSocket);
-                HttpClient client = new DefaultHttpClient(httpParameters);
-
-                HttpGet httpget = new HttpGet(url[0]);
-
-                try {
-                    HttpResponse getResponse = client.execute(httpget);
-                    final int statusCode = getResponse.getStatusLine().getStatusCode();
-
-                    if(statusCode != HttpStatus.SC_OK) {
-                        Log.w("MyApp", "Download Error: " + statusCode + "| for URL: " + url);
-                        return null;
-                    }
-
-                    String line = "";
-                    StringBuilder total = new StringBuilder();
-
-                    HttpEntity getResponseEntity = getResponse.getEntity();
-
-                    BufferedReader reader = new BufferedReader(new InputStreamReader(getResponseEntity.getContent()));
-
-                    while((line = reader.readLine()) != null) {
-                        total.append(line);
-                    }
-
-                    line = total.toString();
-                    return line;
-                } catch (Exception e) {
-                    Log.w("MyApp", "Download Exception : " + e.toString());
-                }
-                return null;
-            }
-
-            @Override
-            protected void onPostExecute(String result) {
-                // do something with result
-            }
-        }
     }
+
