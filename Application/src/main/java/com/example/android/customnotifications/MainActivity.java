@@ -33,34 +33,39 @@ import java.io.BufferedReader;
 import android.os.AsyncTask;
 import android.view.View;
 import android.widget.ImageView;
+import java.net.URL;
+import java.util.ArrayList;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.Node;
+import org.w3c.dom.NodeList;
+import org.xml.sax.InputSource;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.text.Html;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ListView;
+import android.widget.TextView;
+
+public class MainActivity extends Activity {
 
 
 
-    public class MainActivity extends Activity {
-        /**
-         * This sample demonstrates notifications with custom content views.
-         * <p/>
-         * <p>On API level 16 and above a big content view is also defined that is used for the
-         * 'expanded' notification. The notification is created by the NotificationCompat.Builder.
-         * The expanded content view is set directly on the {@link android.app.Notification} once it has been build.
-         * (See {@link android.app.Notification#bigContentView}.) </p>
-         * <p/>
-         * <p>The content views are inflated as {@link android.widget.RemoteViews} directly from their XML layout
-         * definitions using {@link android.widget.RemoteViews#RemoteViews(String, int)}.</p>
-         */
+
+
 
 
         @Override
         public void onBackPressed() {
             // do nothing. We want to force user to stay in this activity and not drop out.
-            setContentView(R.layout.sample_main);
-        }
-
-        protected void onCreate(Bundle savedInstanceState) {
-            super.onCreate(savedInstanceState);
-            WebView webView = (WebView) findViewById(R.id.webView);
-
-
             setContentView(R.layout.sample_main);
         }
 

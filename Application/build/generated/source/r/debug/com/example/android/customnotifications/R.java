@@ -56,22 +56,21 @@ public final class R {
         public static final int transitions=0x7f02000a;
     }
     public static final class id {
-        public static final int TextView01=0x7f0a0002;
         public static final int button=0x7f0a0008;
         public static final int button4=0x7f0a0007;
         public static final int calendarView=0x7f0a0000;
+        public static final int des_text=0x7f0a0001;
         public static final int imageView=0x7f0a0009;
         public static final int imageView2=0x7f0a0006;
         public static final int imageView3=0x7f0a0004;
-        public static final int readWebpage=0x7f0a0001;
+        public static final int listView=0x7f0a0002;
         public static final int textView=0x7f0a0003;
         public static final int textView3=0x7f0a0005;
-        public static final int webView=0x7f0a000a;
     }
     public static final class layout {
         public static final int activity_main=0x7f030000;
         public static final int events=0x7f030001;
-        public static final int main=0x7f030002;
+        public static final int mainpage_listitem_activity=0x7f030002;
         public static final int notification=0x7f030003;
         public static final int notification_expanded=0x7f030004;
         public static final int notification_expanded2=0x7f030005;
