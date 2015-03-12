@@ -61,7 +61,7 @@ import android.widget.ImageView;
             WebView webView = (WebView) findViewById(R.id.webView);
 
 
-            setContentView(R.layout.main);
+            setContentView(R.layout.sample_main);
         }
 
         /**
